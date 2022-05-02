@@ -1,0 +1,258 @@
+:root {
+  --main-text-color: #303030;
+  --forth-text-color: #303030;
+  --secondary-text-color: #9da4bd;
+  --main-white-color: #ffffff;
+  --accent-color: #ff6c00;
+  --third-text-color: #555555;
+}
+
+body {
+  font-family: "Open Sans", "Raleway", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ----------------ТЕКСТ В ПІДПУНКТАХ-------------- */
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.buttom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* ---------------КНОПКИ НА ВСІХ СТОРІНКАХ--------- */
+
+.button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* --------------------Header------------------ */
+
+.header {
+  background-color: grey;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--main-white-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+}
+
+.phone-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33px;
+  letter-spacing: 0.1em;
+  color: var(--main-white-color);
+}
+
+.main-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  color: var(--main-white-color);
+}
+
+.main-button:hover,
+.main-button:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+}
+
+/* ----------------------------Hero--------------------- */
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-text-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-content {
+  background-color: rgba(112, 218, 167, 0.826);
+}
+
+.hero-top-text {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  color: var(--main-white-color);
+}
+
+.hero-buttom-text {
+  color: var(--secondary-text-color);
+}
+
+/* --------------ABOUT-US---------------- */
+
+.about-us-top-text {
+  color: var(--forth-text-color);
+}
+
+.about-us-title {
+  color: var(--main-text-color);
+}
+
+.about-us-buttom-text {
+  color: var(--third-text-color);
+}
+
+.about-us-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+.about-us-button {
+  color: var(--forth-text-color);
+}
+
+/* ------------------Услуги и цены--------------- */
+
+.prices {
+  background-color: rebeccapurple;
+}
+
+.prices-top-text {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--main-white-color);
+}
+
+.prices-cost {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.prices-button {
+  color: var(--main-white-color);
+}
+
+/* -------------Почему приходят именно к нам?------------ */
+
+.reasons-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main-text-color);
+}
+
+.reasons-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--forth-text-color);
+}
+
+.reasons-top-text {
+  color: var(--forth-text-color);
+}
+
+.reasons-title {
+  color: var(--main-text-color);
+}
+
+.reasons-buttom-text {
+  color: var(--third-text-color);
+}
+
+/* ---------------Майстри---------------- */
+
+.masters-top-text {
+  color: var(--forth-text-color);
+}
+
+.masters-title {
+  color: var(--main-text-color);
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--forth-text-color);
+}
+
+.masters-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ---------------ГАЛЕРЕЯ------------- */
+
+.gallery-top-text {
+  color: var(--forth-text-color);
+}
