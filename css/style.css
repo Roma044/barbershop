@@ -450,3 +450,21 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
+/* ------------FOOTER----------- */
+
+.contact-wrap .container {
+  display: flex;
+}
+
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: calc(50% - 15px);
+}
+
+.online {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  flex-grow: 1;
+}
