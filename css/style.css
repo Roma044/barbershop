@@ -101,10 +101,18 @@ body {
 /* --------------------Header------------------ */
 
 .header {
+  z-index: 0;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
 }
 
 .header-logo {
@@ -115,11 +123,18 @@ body {
   margin-left: auto;
 }
 
-.header .container {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .header .container {
   display: flex;
   align-items: center;
   margin-left: 220px;
-}
+} */
 
 .shop-list {
   display: flex;
@@ -142,12 +157,33 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: -8px;
+  border-radius: 4px;
+}
+
 .phone-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33px;
   letter-spacing: 0.1em;
   color: var(--main-white-color);
+}
+
+.phone-link:hover,
+.phone-link:focus {
+  color: var(--accent-color);
 }
 
 .main-button {
@@ -157,6 +193,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   color: var(--main-white-color);
+  background-color: transparent;
   margin-left: 40px;
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
@@ -250,15 +287,13 @@ body {
 }
 
 .hero-title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+
+  font-size: 48px;
+  line-height: calc(56 / 48);
   letter-spacing: 0.05em;
-  color: var(--main-white-color);
-  margin-bottom: var(--typical-margin);
-  display: flex;
-  align-items: baseline;
+  color: #ffffff;
 }
 
 .hero-title::before {
@@ -317,6 +352,7 @@ body {
 .about-us-button {
   color: var(--forth-text-color);
   margin-bottom: 125px;
+  background-color: transparent;
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 }
